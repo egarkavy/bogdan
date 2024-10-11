@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голосование</title>
+    <link rel="stylesheet" href="styls.CSS">
+</head>
+
+<body>
+
+
+    <div class="header">
+        Кандидаты
+    </div>
+    <hr>
+    <div class="table1">
+        <b class="one">1</b>
+        <div class="card">
+           
+            <div class="number1"></div>
+            <div class="img">
+                <img src="photo1.jpg" alt="" height="300px" width="230px">
+                <button id="vote-btn">голосовать</button>
+            </div>
+        </div>
+        <b class="two">2</b>
+        <div class="card2">
+            
+            <div class="number2"></div>
+            <div class="img2">
+                <img src="photo2.jpg" alt="" height="300px" width="230px">
+                <button id="vote-btn">голосовать</button>
+            </div>
+        </div>
+        <b class="three">3</b>
+        <div class="card3">
+            
+            <div class="number3"></div>
+            <div class="img3">
+                <img src="photo3.jpg" alt="" height="300px" width="230px">
+                <button id="vote-btn">голосовать</button>
+            </div>
+        </div>
+        <b class="four">4</b>
+        <div class="card4">
+            
+            <div class="number4"></div>
+            <div class="img4">
+                <video width="230" height="300" controls>
+                    <source src="round_28-09-2024_22-30-52 (1) (video-converter.com).mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <button id="vote-btn">голосовать</button>
+            </div>
+        </div>
+        <b class="five">5</b>
+        <div class="card5">
+            
+            <div class="number5"></div>
+            <div class="img5">
+                <img src="photo4.jpg" alt="" height="300px" width="230px">
+                <button id="vote-btn">голосовать</button>
+            </div>
+        </div>
+        <b class="six">6</b>
+        <div class="card6">
+            
+            <div class="number6"></div>
+            <div class="img6">
+                <img src="photo5.jpg" alt="" height="300px" width="230px">
+                <button id="vote-btn">голосовать</button>
+            </div>
+        </div>
+
+        <table border="1">
+            <tr>
+                <th>Номер кандидата</th>
+                <th>Количество голосов, чел.</th>
+                <th>Количество голосов, %</th>
+            </tr>
+
+
+            <tr>
+                <th>1</th>
+                <td id="c0-votes">qq</td>
+                <td id="c0-percent">qq</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td id="c1-votes">qq</td>
+                <td id="c1-percent">qq</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td id="c2-votes">qq</td>
+                <td id="c2-percent">qq</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td id="c3-votes">qq</td>
+                <td id="c3-percent">qq</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td id="c4-votes">qq</td>
+                <td id="c4-percent">qq</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td id="c5-votes">qq</td>
+                <td id="c5-percent">qq</td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="/voting.js"></script>
+</body>
+
+<body>   
+    <div class="home">    
+        <button type="button" id="home">На главную</button>    
+    </div>   
+
+
+    <script>   
+        document.getElementById('home').addEventListener('click', function() {   
+            window.location.href = 'index.html'; // Путь к главной странице
+        });   
+    </script>   
+</body>   
+

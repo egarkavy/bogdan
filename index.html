@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Выборы</title> 
+    <link rel="stylesheet" href="STYLE.CSS"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>Голосование за кандидатов</h1> 
+
+        <a type="button" id="voteButton" href="/vote">Голосовать</a> 
+    </div>
+</body> 
+</html>
+
+
+    <div class="container">ы
+        <h1>Кандидаты на выборы</h1>
+        <div class="candidates">
+            <div class="candidate" data-img="photo9.jpg" data-bio="Василевич Даниил Дмитриевич. Биография:Василевич Даниил Дмитриевич. Биография: Педагог с 15-летним стажем, Даниил активно работает над реформами в образовании. Он верит, что качественное обучение — основа успешного будущего ...">
+                <img src="photo9.jpg" alt="Кандидат 1">
+                <h2>Кандидат 1</h2>
+                <p> Василевич Даниил Дмитриевич. Биография: Педагог с 15-летним стажем, Даниил активно работает над реформами в образовании. Он верит, что качественное обучение — основа успешного будущего.</p> 
+               
+            </div>
+            <div class="candidate" data-img="photo2.jpg" data-bio="Можаров Алексей Дмитриевич. Биография: Эколог и активист, Алексей занимается проектами по охране окружающей среды. Он стремится к устойчивому развитию и улучшению качества жизни">
+                <img src="photo2.jpg" alt="Кандидат 2">
+                <h2>Кандидат 2</h2>
+                <p>Можаров Алексей Дмитриевич. Биография: Эколог и активист, Алексей занимается проектами по охране окружающей среды. Он стремится к устойчивому развитию и улучшению качества жизни.</p> 
+            </div>
+            <div class="candidate" data-img="photo3.jpg" data-bio="Цукали Вячеслав Александрович. Биография:Кандидат 3 —Цукали Вячеслав Александрович. Биография: —Да Винчи нашего времени, Торговец Смертью, Великий Славик, Таинственный телохранитель, Консультант, Гений, миллиардер, плейбой, филантроп, волейболист 5 летнего стажа 
+            предприниматель, а закончил он строки со словами 'это дежавю или это наяву'...">
+                <img src="photo3.jpg" alt="Кандидат 3">
+                <h2>Кандидат 3</h2>
+                <p>Цукали Вячеслав Александрович. Биография: —Да Винчи нашего времени, Торговец Смертью, Великий Славик, Таинственный телохранитель, Консультант, Гений, миллиардер, плейбой, филантроп, волейболист 5 летнего стажа 
+                    предприниматель, а закончил он строки со словами "это дежавю или это наяву"
+                </p> 
+            </div>
+            <div class="candidate" data-img="round_28-09-2024_22-30-52 (1) (video-converter.com).mp4" data-bio="САЛАМОН ЁПТ. Биография:Важный человек в обществе. про него сказть можно много саламон иди ж ты сюды або за двумя зайцами воробей с яйцами. а так человек с карьерным ростом походу высоким, поднимет всё и вся, а юмор отдельная история.">
+                <video width="250" height="240" controls>
+                    <source src="round_28-09-2024_22-30-52 (1) (video-converter.com).mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <h2>Кандидат 4</h2>
+                <p>САЛАМОН ЁПТ. Биография:Важный человек в обществе. про него сказть можно много саламон иди ж ты сюды або за двумя зайцами воробей с яйцами. а так человек с карьерным ростом походу высоким, поднимет всё и вся, а юмор отдельная история.
+            </div>
+            
+                <div class="candidate" data-img="photo4.jpg" data-bio="Кононович Максим Николаевич. Биография: Успешный предприниматель, Максим создал несколько стартапов в сфере технологий. Его цель — поддержка малого бизнеса и создание новых рабочих мест. ...">
+                    <img src="photo4.jpg" alt="Кандидат 5">
+                    <h2>Кандидат 5</h2>
+                    <p>Кононович Максим Николаевич. Биография:Успешный предприниматель, Максим создал несколько стартапов в сфере технологий. Его цель — поддержка малого бизнеса и создание новых рабочих мест.</p> 
+                </div>
+        
+                    <div class="candidate" data-img="photo5.jpg" data-bio="Казак Глеб Дмитриевич. Биография:Журналист и правозащитник, Глебикс защищает свободу слова и права человека. Он верит в важность гражданского участия в политике ...">
+                        <img src="photo5.jpg" alt="Кандидат 6">
+                        <h2>Кандидат 6</h2>
+                        <p>Казак Глеб Дмитриевич. Биография:Журналист и правозащитник, Глебикс защищает свободу слова и права человека. Он верит в важность гражданского участия в политике </p> 
+                    </div>
+                    
+            
+            
+            <!-- Добавьте других кандидатов аналогично -->
+        </div>
+    </div>
+
+    <!-- Модальное окно для отображения информации о кандидате -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <p id="bio"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выборы</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+
+            height: 100vh; /* Заполнение всей высоты экрана */ 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            position: relative; /* Для позиционирования меню */ 
+
+            background-image: url('https://images.wallpaperscraft.ru/image/single/tsvety_lepestki_voda_1315526_300x168.jpg'); /* Путь к вашему изображению */
+            background-size: cover; /* Заполнение всего экрана */
+            background-position: center; /* Центрирование изображения */
+        }
+
+        .menu {
+            position: absolute; /* Абсолютное позиционирование */
+            top: 20px; /* Сдвиг сверху */
+            left: 20px; /* Сдвиг влево */
+            background-color: rgba(0, 0, 0, 0); /* Полупрозрачный фон для меню */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Цвет кнопки */
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #002144; /* Цвет кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"> 
+        <button type="button" id="menu">о нас</button> 
+
+    </div>
+    <script>
+        document.getElementById('menu').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        .menu {   
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            background-color: rgba(0, 0, 0, 0.8); 
+            padding: 10px;   
+            border-radius: 5px;   
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);   
+        }   
+
+        button {   
+            padding: 10px 20px;   
+            font-size: 16px;   
+            border: none;   
+            border-radius: 5px;   
+            background-color: #007bff; 
+            color: rgb(0, 0, 0);   
+            cursor: pointer;   
+            transition: background-color 0.3s;   
+        }   
+
+        button:hover {   
+            background-color: #002144; 
+        }   
+    </style>   
+</head>   
+<body>   
+    <div class="menu">    
+        <button type="button" id="about">О нас</button>    
+    </div>   
+
+    <script>   
+        document.getElementById('about').addEventListener('click', function() {   
+            window.location.href = 'about.html'; // Путь к странице "О нас"
+        });   
+    </script>   
+</body>   
+</html>
+
+
+   

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <style>
+        .menu {   
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 10px;   
+            border-radius: 5px;   
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);   
+        }   
+
+        button {   
+            padding: 10px 20px;   
+            font-size: 16px;   
+            border: none;   
+            border-radius: 5px;   
+            background-color: #007bff; 
+            color: white;   
+            cursor: pointer;   
+            transition: background-color 0.3s;   
+        }   
+
+        button:hover {   
+            background-color: #002144; 
+        }   
+    </style>   
+</head>   
+<body>   
+    <div class="menu">    
+        <button type="button" id="home">На главную</button>    
+    </div>   
+
+
+    <script>   
+        document.getElementById('home').addEventListener('click', function() {   
+            window.location.href = 'index.html'; // Путь к главной странице
+        });   
+    </script>   
+</body>   
+</html>
+<!DOCTYPE html>    
+<html lang="ru">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Выборы</title>    
+    <link rel="stylesheet" href="style.css">    
+    <style>     
+        body {  
+            margin: 0;  
+            padding: 0;  
+            font-family: Arial, sans-serif;  
+            height: 100vh; /* Заполнение всей высоты экрана */  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            position: relative; /* Для позиционирования меню */  
+            background-image: url('https://img3.akspic.ru/crops/0/8/2/6/7/176280/176280-oblako-atmosfera-sinij-lazurnyj-vyshka-1920x1080.jpg'); /* Путь к вашему изображению */ 
+            background-size: cover; /* Заполнение всего экрана */ 
+            background-position: center; /* Центрирование изображения */ 
+        } 
+
+        .onas, .po {   
+            position: absolute; /* Абсолютное позиционирование */   
+            left: 600px;   
+            top: 40px; /* Сдвиг сверху */   
+            width: 350px; /* Ширина флага */   
+            height: auto; /* Автоматическая высота для сохранения пропорций */   
+            opacity: 100;   
+            color: blanchedalmond; /* Цвет текста */
+            border: 2px solid white; /* Белая рамка */
+            border-radius: 10px; /* Закругленные углы */
+            padding: 20px; /* Внутренние отступы */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для рамки */
+        }   
+
+        .onas { left: 1000px; } /* Смещение для блока "Создатели" */
+    </style>   
+</head>    
+<body>     
+    <div class="onas">    
+        <h1>Создатели:</h1>    
+        <h1>91МНЭ-Касилович Богдан</h1>    
+        <h1>ТП-Кузьма</h1>    
+    </div>   
+   
+    <div class="po">    
+        <h1>Участники Проекта:</h1>    
+        <h1>91МНЭ-Кононович Максим Николаевич</h1>    
+        <h1>91МНЭ-Василевич Даниил Дмитриевич</h1>    
+        <h1>91МНЭ-</h1>    
+        <h1>91МНЭ-</h1>    
+        <h1>91МНЭ-Казак Глеб Дмитриевич</h1>   
+        <h1>91МНЭ-Можаров Алексей Дмитриевич</h1>   
+    </div>   
+</body>   
+</html>
